@@ -50,8 +50,8 @@
         videoElement.play();
 
         // create the media recoder
-        const options = { mimeType: 'video/webm' };
-        mediaRecodrer = new MediaRecorder(stream, options);
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecoder.mimeType = 'video/webm';
 
         // register event handlers
         mediaRecorder.ondataavailable = handleDataAvailable;
@@ -65,7 +65,7 @@
 
         async function handleStop(e) {
             const blob = new Blob(recordedChunks, {
-                type: 'video/webm; codecs=vp9'
+                type: 'video/webm'
             });
 
             const buffer = Buffer.from(await blob.arrayBuffer());
