@@ -51,11 +51,11 @@
 
         // create the media recoder
         mediaRecorder = new MediaRecorder(stream);
-        mediaRecoder.mimeType = 'video/webm';
+        mediaRecorder.mimeType = 'video/webm';
 
         // register event handlers
         mediaRecorder.ondataavailable = handleDataAvailable;
-        mediaRecorder.options = handleStop;
+        mediaRecorder.onstop = handleStop;
 
         // captures all recorded chunks
         function handleDataAvailable(e) {
@@ -74,13 +74,11 @@
 
             const { filePath } = await dialog.showSaveDialog({
                 buttonLabel: 'Save Video!',
-                defaultPath: 'vid-${Date.now()}.webm'
+                defaultPath: 'video.webm'
             });
 
             console.log(filePath);
-            if(filePath) {
                 writeFile(filePath, buffer, () => console.log("Video Saved successfully!!!!"));
-            }
         }
   
         // Buttons - Event Listeners
