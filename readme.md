@@ -13,4 +13,4 @@ For info about how to create and package app using electron forge, see [electron
 - [ ] **Needs more error handling**
 
 ## TODO in github : 
-- [ ] Set automatic deployments
+- [ ] Set automatic releases
