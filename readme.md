@@ -5,6 +5,7 @@ For info about how to create and package app using electron forge, see [electron
 ## TODO :
 <hr>
 
+- [ ] Need to change the title to xD
 - [ ] Improve UI
 - [ ] Add more functionality
 - [ ] Support for more video formats
