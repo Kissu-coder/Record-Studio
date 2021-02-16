@@ -10,3 +10,6 @@ For info about how to create and package app using electron forge, see [electron
 - [] Support for more video formats
 - [] Support for audio
 - [] **Needs more error handling**
+
+## TODO in github : 
+- [] Set automatic deployments
