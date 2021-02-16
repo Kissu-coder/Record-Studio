@@ -5,11 +5,11 @@ For info about how to create and package app using electron forge, see [electron
 ## TODO :
 <hr>
 
-- [] Improve UI
-- [] Add more functionality
-- [] Support for more video formats
-- [] Support for audio
-- [] **Needs more error handling**
+- [ ] Improve UI
+- [ ] Add more functionality
+- [ ] Support for more video formats
+- [ ] Support for audio
+- [ ] **Needs more error handling**
 
 ## TODO in github : 
-- [] Set automatic deployments
+- [ ] Set automatic deployments
