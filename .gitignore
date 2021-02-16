@@ -87,3 +87,6 @@ typings/
 
 # Electron-Forge
 out/
+
+# visual - studio configs
+.vs/
