@@ -11,7 +11,6 @@ To put it simple :
 ## TODO :
 <hr>
 
-- [ ] Need to change the title too xD
 - [ ] Improve UI
 - [ ] Add more functionality
 - [ ] Support for more video formats
