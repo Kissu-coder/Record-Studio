@@ -11,7 +11,6 @@ To put it simple :
 ## TODO :
 <hr>
 
-- [x] Improve UI
 - [ ] Add more functionality
 - [ ] Support for more video formats
 - [ ] Support for audio
