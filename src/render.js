@@ -9,6 +9,9 @@
     let mediaRecorder;
     const recordedChunks = [];
 
+    const videoStatus = document.getElementsByClassName('video-status')[0];
+    videoStatus.textContent = "Waiting for you to start recording x3";
+
     const videoSelectBtn = document.getElementById('videoSelection');
     videoSelectBtn.onclick = getVideoSources;
 
@@ -87,12 +90,20 @@
             mediaRecorder.start();
             startBtn.classList.add('is-danger');
             startBtn.innerText = 'Recording';
+            startBtn.disabled = true;
+            stopBtn.disabled = false;
+            videoStatus.textContent = "Recording :D";
+            
         };
         const stopBtn = document.getElementById('stopBtn');
+        stopBtn.disabled = true;
         stopBtn.onclick = e => {
             mediaRecorder.stop();
             startBtn.classList.remove('is-danger');
             startBtn.innerText = 'Start';
+            startBtn.disabled = false;
+            stopBtn.disabled = true;
+            videoStatus.textContent = "Recording finished!";
         };
 
     }

@@ -11,11 +11,12 @@ To put it simple :
 ## TODO :
 <hr>
 
-- [ ] Improve UI
+- [x] Improve UI
 - [ ] Add more functionality
 - [ ] Support for more video formats
 - [ ] Support for audio
 - [ ] **Needs more error handling**
+- [ ] Add support for capturing specific windows by embedding ffmpeg
 
 ## TODO in github : 
 - [ ] Set automatic releases
